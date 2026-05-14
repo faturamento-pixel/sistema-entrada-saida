@@ -4,24 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sistema Sofisticatto</title>
+
   <link rel="stylesheet" href="style.css">
-<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=AYKFhWWLbqsTcLtxa29bg_WintMVs0RKbeAxyi4xDaxi6GnF9cVZy6er_8X9QOyYc9Mld6EIHKSdvNQmlHLq0xz06gfNaN_IQTSjkiddunTk4_gJ7p90-D6QE-tZ9ENs1UpodOKa3T_ziwrwbZ1-4CLszYUpGgxBfZDC7vdakKbSJDTthzolWuYUaWmfCvd5VhvgB89hQf6O4IIPW8qtPKZVSAUAAzTT8DHCqfPG9eFATXMk2b9chgBrGFphMLCSljN9eWahuLtMOCNAZ36A2A" charset="UTF-8"></script></head>
+</head>
 <body>
 
-<div id="login" class="login-box">
-  <img src="https://i.imgur.com/8Km9tLL.png" class="logo">
+<div id="login" class="login-container">
 
-  <input type="text" id="usuario" placeholder="Usuário">
-  <input type="password" id="senha" placeholder="Senha">
+  <div class="login-box">
 
-  <button onclick="fazerLogin()">Entrar</button>
+    <img
+      src="https://i.imgur.com/8Km9tLL.png"
+      class="logo"
+    >
+
+    <input
+      type="text"
+      id="usuario"
+      placeholder="Usuário"
+    >
+
+    <input
+      type="password"
+      id="senha"
+      placeholder="Senha"
+    >
+
+    <button onclick="fazerLogin()">
+      Entrar
+    </button>
+
+  </div>
+
 </div>
 
 <div id="sistema" style="display:none;">
-  <h1>Sistema carregado com sucesso 😁</h1>
+
+  <div class="topo">
+    <h1>Sistema Entrada e Saída</h1>
+  </div>
+
+  <div class="conteudo">
+
+    <div class="menu-lateral">
+
+      <button>Cadastro Produtos</button>
+
+      <button>Registrar Entrada</button>
+
+      <button>Registro Entrada</button>
+
+      <button>Pesquisa Produto</button>
+
+    </div>
+
+    <div class="painel">
+
+      <h2>
+        Sistema carregado com sucesso 😁
+      </h2>
+
+    </div>
+
+  </div>
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
 <script src="script.js"></script>
 
 </body>
