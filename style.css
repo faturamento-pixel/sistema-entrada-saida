@@ -1,53 +1,161 @@
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
 body{
-  background:#f5f2fb;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  min-height:100vh;
+    background:#f5f2fb;
+    min-height:100vh;
+}
+
+/* LOGIN */
+
+.login-container{
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .login-box{
-  width:350px;
-  background:white;
-  padding:40px;
-  border-radius:25px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.1);
-  display:flex;
-  flex-direction:column;
-  gap:15px;
+    width:360px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+
+    display:flex;
+    flex-direction:column;
+
+    gap:18px;
 }
 
 .logo{
-  width:220px;
-  margin:0 auto 20px;
+    width:230px;
+    margin:auto;
+    margin-bottom:15px;
 }
 
-input{
-  height:45px;
-  border:none;
-  border-radius:12px;
-  padding:10px;
-  background:#ece7f5;
-  font-size:16px;
+.login-box input{
+    height:48px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#ebe7f6;
+
+    padding:12px;
+
+    font-size:16px;
+
+    outline:none;
 }
 
-button{
-  height:45px;
-  border:none;
-  border-radius:12px;
-  background:#6553b8;
-  color:white;
-  font-size:18px;
-  cursor:pointer;
+.login-box button{
+    height:50px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#6553b8;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.2s;
 }
 
-button:hover{
-  opacity:0.9;
+.login-box button:hover{
+    opacity:0.9;
+}
+
+/* SISTEMA */
+
+.topo{
+    background:#6553b8;
+
+    color:white;
+
+    padding:20px;
+
+    text-align:center;
+}
+
+.conteudo{
+    display:flex;
+}
+
+.menu-lateral{
+    width:250px;
+
+    min-height:100vh;
+
+    background:white;
+
+    padding:20px;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:15px;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.05);
+}
+
+.menu-lateral button{
+    height:50px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#6553b8;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+.painel{
+    flex:1;
+
+    padding:30px;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .conteudo{
+        flex-direction:column;
+    }
+
+    .menu-lateral{
+        width:100%;
+        min-height:auto;
+    }
+
+    .login-box{
+        width:90%;
+    }
+
 }
